@@ -1,0 +1,5 @@
+import{dy as c,dz as d}from"./index-B-Wkf0n4.js";/**
+  * vee-validate v4.9.4
+  * (c) 2023 Abdelrahman Awad
+  * @license MIT
+  */const f=n=>n!==null&&!!n&&typeof n=="object"&&!Array.isArray(n);function l(n){return Number(n)>=0}function o(n,t){return Object.keys(t).forEach(r=>{if(f(t[r])){n[r]||(n[r]={}),o(n[r],t[r]);return}n[r]=t[r]}),n}function p(n,t){return{__type:"VVTypedSchema",async parse(e){const s=await n.safeParseAsync(e,t);if(s.success)return{value:s.data,errors:[]};const i={};return u(s.error.issues,i),{errors:Object.values(i)}},cast(e){try{return n.parse(e)}catch{const i=a(n);return f(i)&&f(e)?o(i,e):e}}}}function u(n,t){n.forEach(r=>{const e=m(r.path);r.code==="invalid_union"&&(u(r.unionErrors.flatMap(s=>s.issues),t),!e)||(t[e]||(t[e]={errors:[],path:e}),t[e].errors.push(r.message))})}function m(n){if(!n.length)return"";let t=String(n[0]);for(let r=1;r<n.length;r++){if(l(n[r])){t+=`[${n[r]}]`;continue}t+=`.${n[r]}`}return t}function a(n){if(n instanceof c)return Object.fromEntries(Object.entries(n.shape).map(([t,r])=>r instanceof d?[t,r._def.defaultValue()]:r instanceof c?[t,a(r)]:[t,void 0]))}const O=p;export{p as a,O as t};

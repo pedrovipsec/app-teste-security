@@ -1,0 +1,1 @@
+function s(e){if(e)return e.length===14?e.replace(/^(\d{2})(\d{3})(\d{3})(\d{4})(\d{2})/,"$1.$2.$3/$4-$5"):e.replace(/^(\d{3})(\d{3})(\d{3})(\d{2})/,"$1.$2.$3-$4")}function t(e,n){return e.toLowerCase().includes(n.toLowerCase())}function d(e,n){return e.replace(/\D/g,"").includes(n)||e.includes(n)}export{t as a,d as c,s};

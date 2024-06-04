@@ -1,0 +1,1 @@
+import{d as e,o as a,f as o,n as c,b as r,bn as t}from"./index-B-Wkf0n4.js";const m=e({__name:"Skeleton",props:{class:{}},setup(n){const s=n;return(l,p)=>(a(),o("div",{class:c(r(t)("animate-pulse rounded bg-zinc-200/70 dark:bg-zinc-800",s.class))},null,2))}});export{m as _};

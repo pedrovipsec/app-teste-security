@@ -1,0 +1,1 @@
+import{d as o,o as s,f as r,r as n,n as a}from"./index-B-Wkf0n4.js";const l=o({__name:"AppCard",props:{responsive:{type:Boolean,default:!0}},setup(d){return(e,t)=>(s(),r("div",{class:a(["card__default sm:mx-0",e.responsive?"-mx-4 rounded-none sm:rounded-box":"rounded-box"])},[n(e.$slots,"default")],2))}});export{l as _};
